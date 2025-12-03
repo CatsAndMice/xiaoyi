@@ -1049,7 +1049,7 @@ export default function Home() {
         redirectUrl += currentSearch + currentHash;
 
         // 执行重定向
-        window.location.replace(redirectUrl);
+        // window.location.replace(redirectUrl);
       } else if (isLocalhost) {
         console.log(`检测到本地开发环境 (${currentHostname})，跳过重定向`);
       }
