@@ -1028,25 +1028,25 @@ export default function Home() {
 
       // 检查当前URL是否不是目标域名，且不是本地开发环境
       if (!currentUrl.startsWith(targetDomain) && !isLocalhost) {
-        console.log(`当前URL: ${currentUrl}`);
-        console.log(`目标URL: ${targetDomain}`);
-        console.log('正在重定向到官方域名...');
+        // console.log(`当前URL: ${currentUrl}`);
+        // console.log(`目标URL: ${targetDomain}`);
+        // console.log('正在重定向到官方域名...');
 
-        // 保留当前路径和查询参数
-        const currentPath = window.location.pathname;
-        const currentSearch = window.location.search;
-        const currentHash = window.location.hash;
+        // // 保留当前路径和查询参数
+        // const currentPath = window.location.pathname;
+        // const currentSearch = window.location.search;
+        // const currentHash = window.location.hash;
 
-        // 构建完整的目标URL
-        let redirectUrl = targetDomain;
+        // // 构建完整的目标URL
+        // let redirectUrl = targetDomain;
 
-        // 如果不是根路径，添加路径
-        if (currentPath && currentPath !== '/') {
-          redirectUrl = redirectUrl.replace(/\/$/, '') + currentPath;
-        }
+        // // 如果不是根路径，添加路径
+        // if (currentPath && currentPath !== '/') {
+        //   redirectUrl = redirectUrl.replace(/\/$/, '') + currentPath;
+        // }
 
-        // 添加查询参数和哈希
-        redirectUrl += currentSearch + currentHash;
+        // // 添加查询参数和哈希
+        // redirectUrl += currentSearch + currentHash;
 
         // 执行重定向
         // window.location.replace(redirectUrl);
